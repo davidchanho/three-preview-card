@@ -10,7 +10,7 @@ interface Props {
 
 function PreviewItem({ id, type, icon, description }: Props) {
   return (
-    <li key={id} className={styles.item}>
+    <li className={styles.item}>
       <img
         className={styles.icon}
         src={icon}

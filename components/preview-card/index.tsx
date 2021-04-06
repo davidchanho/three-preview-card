@@ -7,7 +7,7 @@ function PreviewCard() {
   return (
     <ul className={styles.list}>
       {cars.map((car) => {
-        return <PreviewItem {...car} />;
+        return <PreviewItem key={car.id} {...car} />;
       })}
     </ul>
   );
