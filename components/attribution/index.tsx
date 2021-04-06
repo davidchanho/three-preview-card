@@ -8,7 +8,11 @@ function Attribution() {
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor
       </a>
-      . Coded by <a href="https://www.davidchanho.com">David Chan Ho</a>.
+      . Coded by{" "}
+      <a href="https://www.davidchanho.com" target="_blank">
+        David Chan Ho
+      </a>
+      .
     </footer>
   );
 }
