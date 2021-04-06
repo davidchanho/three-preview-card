@@ -1,8 +1,10 @@
+@use 'styles' as *;
+
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 0.75rem;
   a {
-    color: hsl(228, 45%, 44%);
+    color: $purple;
   }
 }
