@@ -1,18 +1,15 @@
-import Head from "next/head";
+import React from "react";
+import Attribution from "../components/attribution";
+import NextHead from "../components/next-head";
 import PreviewCard from "../components/preview-card";
-import styles from "../styles/Home.module.scss";
+import styles from "./Home.module.scss";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <PreviewCard  />
-      </main>
+      <NextHead />
+      <PreviewCard />
+      <Attribution />
     </div>
   );
 }

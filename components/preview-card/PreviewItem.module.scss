@@ -1,5 +1,30 @@
 @use 'styles' as *;
 
+@mixin button($color) {
+  button {
+    background-color: $white;
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    border: 2px solid transparent;
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 0;
+    color: $color;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 350ms ease-in-out;
+
+    &:hover,
+    &:active {
+      background-color: $color;
+      border: 2px solid $white;
+      color: $white;
+    }
+  }
+}
+
 .item {
   &:nth-child(1) {
     border-radius: 0.4rem 0.4rem 0 0;
@@ -17,8 +42,28 @@
   }
 }
 
-@media (min-width: 675px) {
+.icon {
+  margin-bottom: 35px;
+}
+
+.type {
+  margin-bottom: 29px;
+  font-size: 40px;
+  line-height: 0;
+  letter-spacing: 0;
+}
+
+.description {
+  opacity: 0.75;
+  margin-bottom: 83px;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+@media (min-width: $mobileBP) {
   .item {
+    padding: 48px;
     &:nth-child(1) {
       border-radius: 0.4rem 0 0 0;
     }

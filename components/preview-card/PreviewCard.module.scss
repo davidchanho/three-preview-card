@@ -4,12 +4,12 @@
   color: $white;
 }
 
-@media (min-width: 675px) {
+@media (min-width: $mobileBP) {
   .list {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 920px;
-    height: 500px;
+    max-width: 920px;
+    max-height: 500px;
   }
 }
