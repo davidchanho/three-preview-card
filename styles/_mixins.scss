@@ -1,0 +1,23 @@
+@use 'colors' as *;
+
+@mixin button($color) {
+  button {
+    background-color: $white;
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    border: 2px solid transparent;
+    color: $color;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 350ms ease-in-out;
+
+    &:hover,
+    &:active {
+      background-color: $color;
+      border: 2px solid $white;
+      color: $white;
+    }
+  }
+}

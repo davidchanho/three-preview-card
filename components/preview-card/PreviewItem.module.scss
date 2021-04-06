@@ -1,0 +1,29 @@
+@use 'styles' as *;
+
+.item {
+  &:nth-child(1) {
+    border-radius: 0.4rem 0.4rem 0 0;
+    background-color: $orange;
+    @include button($orange);
+  }
+  &:nth-child(2) {
+    background-color: $green;
+    @include button($green);
+  }
+  &:nth-child(3) {
+    border-radius: 0 0 0.4rem 0.4rem;
+    background-color: $darkgreen;
+    @include button($darkgreen);
+  }
+}
+
+@media (min-width: 675px) {
+  .item {
+    &:nth-child(1) {
+      border-radius: 0.4rem 0 0 0;
+    }
+    &:nth-child(3) {
+      border-radius: 0 0.4rem 0 0;
+    }
+  }
+}

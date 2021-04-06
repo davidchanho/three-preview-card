@@ -1,0 +1,15 @@
+@use 'styles' as *;
+
+.list {
+  color: $white;
+}
+
+@media (min-width: 675px) {
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 920px;
+    height: 500px;
+  }
+}
