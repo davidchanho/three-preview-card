@@ -2,24 +2,12 @@
 @import url("http://fonts.cdnfonts.com/css/big-shoulders-inline-display");
 @import url("http://fonts.cdnfonts.com/css/lexend-deca");
 
-@mixin button($color) {
-  button {
-    background-color: $white;
-    border-radius: 1.5625rem;
-    width: 9.125rem;
-    height: 3rem;
-    border: 0.125rem solid transparent;
-    font-size: 0.9375rem;
-    line-height: 0;
-    letter-spacing: 0;
+@mixin buttonColor($color) {
+  .button {
     color: $color;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 350ms ease-in-out;
     &:hover,
     &:active {
       background-color: $color;
-      border: 0.125rem solid $white;
       color: $white;
     }
   }
@@ -31,16 +19,16 @@
   &:nth-child(1) {
     border-radius: 0.4rem 0.4rem 0 0;
     background-color: $orange;
-    @include button($orange);
+    @include buttonColor($orange);
   }
   &:nth-child(2) {
     background-color: $green;
-    @include button($green);
+    @include buttonColor($green);
   }
   &:nth-child(3) {
     border-radius: 0 0 0.4rem 0.4rem;
     background-color: $darkgreen;
-    @include button($darkgreen);
+    @include buttonColor($darkgreen);
   }
 }
 
@@ -55,6 +43,25 @@
   letter-spacing: 0;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.button {
+  background-color: $white;
+  border-radius: 1.5625rem;
+  width: 9.125rem;
+  height: 3rem;
+  border: 0.125rem solid transparent;
+  font-size: 0.9375rem;
+  line-height: 0;
+  letter-spacing: 0;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 350ms ease-in-out;
+  &:hover,
+  &:active {
+    border: 0.125rem solid $white;
+    color: $white;
+  }
 }
 
 .description {
