@@ -2,13 +2,12 @@ import React from "react";
 import styles from "./PreviewItem.module.scss";
 
 interface Props {
-  id: string;
   type: string;
   icon: string;
   description: string;
 }
 
-function PreviewItem({ id, type, icon, description }: Props) {
+function PreviewItem({ type, icon, description }: Props) {
   return (
     <li className={styles.item}>
       <img
