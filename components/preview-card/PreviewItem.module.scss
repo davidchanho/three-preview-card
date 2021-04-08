@@ -2,7 +2,9 @@
 @import url("http://fonts.cdnfonts.com/css/big-shoulders-inline-display");
 @import url("http://fonts.cdnfonts.com/css/lexend-deca");
 
-@mixin buttonColor($color) {
+@mixin Color($color) {
+  background-color: $color;
+
   .button {
     color: $color;
     &:hover,
@@ -18,17 +20,14 @@
 
   &:nth-child(1) {
     border-radius: 0.4rem 0.4rem 0 0;
-    background-color: $orange;
-    @include buttonColor($orange);
+    @include Color($orange);
   }
   &:nth-child(2) {
-    background-color: $green;
-    @include buttonColor($green);
+    @include Color($green);
   }
   &:nth-child(3) {
     border-radius: 0 0 0.4rem 0.4rem;
-    background-color: $darkgreen;
-    @include buttonColor($darkgreen);
+    @include Color($darkgreen);
   }
 }
 
