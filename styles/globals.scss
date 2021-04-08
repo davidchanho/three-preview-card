@@ -6,6 +6,19 @@ body {
   margin: 0;
 }
 
+html {
+  @font-face {
+    font-family: "Lexend Deca", sans-serif;
+    src: url("../public/fonts/LexendDeca-Regular.ttf") format("truetype");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Big Shoulders Display", sans-serif;
+    src: url("../public/fonts/BigShouldersDisplay-Bold.ttf") format("truetype");
+    font-weight: 400;
+  }
+}
+
 body {
   background-color: $grey;
   font-family: $paragraphFont;

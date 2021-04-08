@@ -1,6 +1,4 @@
 @use 'styles' as *;
-@import url("http://fonts.cdnfonts.com/css/big-shoulders-inline-display");
-@import url("http://fonts.cdnfonts.com/css/lexend-deca");
 
 @mixin Color($color) {
   background-color: $color;
@@ -50,6 +48,7 @@
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   letter-spacing: 0;
+  font-weight: 400;
   margin-bottom: 1.8125rem;
 }
 
@@ -60,6 +59,7 @@
   height: 3rem;
   border: 0.125rem solid transparent;
   font-size: 0.9375rem;
+  font-weight: 400;
   line-height: 0;
   letter-spacing: 0;
   cursor: pointer;
