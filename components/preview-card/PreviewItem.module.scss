@@ -23,6 +23,7 @@
     @include Color($orange);
   }
   &:nth-child(2) {
+    border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
     @include Color($green);
   }
   &:nth-child(3) {
@@ -32,16 +33,24 @@
 }
 
 .icon {
-  margin-bottom: 2.1875rem;
+  margin-bottom: 2.5rem;
 }
 
 .type {
-  margin-bottom: 2.1875rem;
+  margin-bottom: 2.5rem;
   font-size: 2.5rem;
   line-height: 0;
   letter-spacing: 0;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.description {
+  opacity: 0.75;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0;
+  margin-bottom: 1.8125rem;
 }
 
 .button {
@@ -63,28 +72,14 @@
   }
 }
 
-.description {
-  opacity: 0.75;
-  font-size: 0.9375rem;
-  line-height: 1.5625rem;
-  letter-spacing: 0;
-  margin-bottom: 1.5625rem;
-}
-
 @media (min-width: $mobileBP) {
   .item {
     &:nth-child(1) {
-      border-radius: 0.4rem 0 0 0;
+      border-radius: 0.4rem 0 0 0.4rem;
     }
     &:nth-child(3) {
-      border-radius: 0 0.4rem 0 0;
+      border-radius: 0 0.4rem 0.4rem 0;
     }
-  }
-  .type {
-    margin-bottom: 2.1875rem;
-  }
-  .icon {
-    margin-bottom: 2.1875rem;
   }
   .description {
     margin-bottom: 5.1875rem;

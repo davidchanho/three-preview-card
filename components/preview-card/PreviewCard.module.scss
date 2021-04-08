@@ -2,16 +2,16 @@
 
 .list {
   color: $white;
+  min-width: 20.4375rem;
+  max-width: 57.5rem;
+  width: 100%;
+  max-height: 82.875rem;
+  min-height: 31.25rem;
+  height: 100%;
 }
 
 @media (min-width: $mobileBP) {
   .list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 57.5rem;
-    width: 100%;
-    max-height: 31.25rem;
-    height: 100%;
   }
 }
